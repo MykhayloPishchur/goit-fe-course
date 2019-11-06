@@ -1,0 +1,127 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Playfair Display', serif;
+
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    line-height: 24px;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+/* панель навигации / меню */
+.page-nav{
+    padding: 77px 0 75px 0;
+}
+.navigation-bar{
+    display: inline-block;
+    vertical-align: middle;
+    width: 901px;
+    text-align: center;
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+.navigation-bar li{
+    display:inline-block;
+    vertical-align: middle;
+}
+.navigation-bar a{
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+}
+.navigation-bar a:hover,
+.navigation-bar a:focus{
+color:rgb(3, 169, 244)
+}
+.navigation-bar li:nth-child(1){
+    margin-right: 121px;
+}
+.navigation-bar li:nth-child(2){
+    margin-right: 103px;
+}
+.navigation-bar li:nth-child(3){
+    margin-right: 95px;
+}
+/* тело сайта  */
+.list{
+    list-style: none;
+    margin:0;
+    padding: 29px 0 0 0;
+    font-size: 0;
+}
+.list-items{
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+    }
+.list-items:nth-child(2n){
+    margin-right: 0;
+}
+.list-items h2 {
+    margin: 30px 0 30px 0;
+    font-size: 30px;
+    color: rgb(98, 98, 98);
+    line-height: 36px;
+}
+.list-items-description{
+    margin: 30px 0 0 0;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 17px;
+}
+.list-item-text{
+    margin:0 0 120px 0 ;
+    font-size: 14px;
+    color: rgb(98, 98, 98);
+    line-height: 24px;
+}
+.bold{
+    font-weight: bold;
+}
+/* не мог понять как отделить последние 2 блока чтоб обнулить margin */
+.list-item-text-b{
+    margin:0;
+    font-size: 14px;
+    color: rgb(98, 98, 98);
+    line-height: 24px;
+}
+/* кнопка из-за сложности использования тега button я использовал обыкновенный div */
+.load{
+    text-align: center;
+    width: 164px;
+    height: 60px;
+    border-width: 1px;
+    border-color: rgb(98, 98, 98);
+    border-style: solid;
+    margin: 54px 379px 70px 358px;
+    padding: 19px 32px;
+    font-size: 20px;
+    color: rgb(98, 98, 98);
+    line-height: 24px;
+    background-color: white;
+    cursor: pointer;
+}
+.load:hover,
+.load:focus{
+background-color:rgb(3, 169, 244)
+}
