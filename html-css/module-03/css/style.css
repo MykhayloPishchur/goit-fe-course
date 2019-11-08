@@ -8,7 +8,6 @@ html{
 }
 body{
     font-family: 'Playfair Display', serif;
-
     color: rgb(98, 98, 98);
     font-size: 14px;
     line-height: 24px;
@@ -27,20 +26,21 @@ img{
     padding: 77px 0 75px 0;
 }
 .navigation-bar{
-    display: inline-block;
     vertical-align: middle;
     width: 901px;
     text-align: center;
-    font-size: 14px;
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 0px;
     }
 .navigation-bar li{
     display:inline-block;
     vertical-align: middle;
 }
 .navigation-bar a{
+    display:block;
+    font-size:14px;
     font-family: "PlayfairDisplay";
     color: rgb(98, 98, 98);
     text-transform: uppercase;
@@ -71,18 +71,29 @@ color:rgb(3, 169, 244)
     display: inline-block;
     width: 420px;
     margin-right: 60px;
+	margin-bottom:120px;
     }
 .list-items:nth-child(2n){
     margin-right: 0;
 }
+.list-items:nth-child(5){
+    margin-bottom: 0;
+}
+.list-items:nth-child(6){
+    margin-bottom: 0;
+}
 .list-items h2 {
-    margin: 30px 0 30px 0;
+    margin: 0px;
+	margin-bottom:30px;
     font-size: 30px;
     color: rgb(98, 98, 98);
     line-height: 36px;
+	
 }
 .list-items-description{
-    margin: 30px 0 0 0;
+    margin: 0;
+    margin-bottom: 30px;
+	padding-top:30px;
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
     color: rgb(180, 173, 158);
@@ -90,23 +101,17 @@ color:rgb(3, 169, 244)
     line-height: 17px;
 }
 .list-item-text{
-    margin:0 0 120px 0 ;
-    font-size: 14px;
+    margin:0;
+	font-size: 14px;
     color: rgb(98, 98, 98);
     line-height: 24px;
 }
 .bold{
     font-weight: bold;
 }
-/* не мог понять как отделить последние 2 блока чтоб обнулить margin */
-.list-item-text-b{
-    margin:0;
-    font-size: 14px;
-    color: rgb(98, 98, 98);
-    line-height: 24px;
-}
-/* кнопка из-за сложности использования тега button я использовал обыкновенный div */
+
 .load{
+	font-family: 'Playfair Display', serif;
     text-align: center;
     width: 164px;
     height: 60px;
@@ -114,7 +119,7 @@ color:rgb(3, 169, 244)
     border-color: rgb(98, 98, 98);
     border-style: solid;
     margin: 54px 379px 70px 358px;
-    padding: 19px 32px;
+	padding: 19px 32px;
     font-size: 20px;
     color: rgb(98, 98, 98);
     line-height: 24px;
