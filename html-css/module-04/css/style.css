@@ -1,0 +1,231 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(63, 52, 52);
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    width: 1110px;
+    margin: 0px auto;
+}
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.page-nav{
+    padding: 36px 0 36px 0; 
+    /* background-color: aqua; */
+}
+.logo{
+    display:inline-block;
+    text-decoration: none;
+    color: rgb(81, 81, 81);
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+.logo::first-letter{
+    color:rgb(26, 188, 156);
+}
+.navigation-bar{
+    font-size: 0;
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-top: 4px;
+    list-style: none;
+    }
+.navigation-bar li{
+    float: left;
+    margin-left: 30px;
+    }
+.navigation-bar li:first-child{
+    margin-left: 0px;
+}
+.navigation-bar a{
+    text-decoration: none;
+    color: rgb(15, 1, 1);
+    display: block;
+    font-size: 14px;
+    font-family: "OpenSans";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navigation-bar a:hover,
+.navigation-bar a:focus{
+    color: rgb(26, 188, 156);
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 58px;
+    font-family: "Myriad Pro";
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+}
+h2::after{
+    margin: 34px 475px 0 475px;
+    width:160px;
+    height: 7px;
+    content: '';
+    display: block;
+    background-color: rgb(26, 188, 156);
+}
+
+.products-list{
+    margin: 0;
+    padding: 0;
+    padding-top: 92px;
+    font-size: 0;
+}
+
+.products-list-item{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.products-list-item:nth-child(4n){
+    margin-right: 0;
+}
+.products-list-item:nth-child(8){
+    margin-bottom: 0;
+}
+.products-list-item:nth-child(7){
+    margin-bottom: 0;
+}
+.products-list-item:nth-child(6){
+    margin-bottom: 0;
+}
+.products-list-item:nth-child(5){
+    margin-bottom: 0;
+}
+
+.prod-info{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.description{
+    float: left;
+    width: 201px;
+    padding-left: 13px;
+    background-color: rgb(50, 50, 50);
+    color: rgb(235, 235, 235);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 32px;
+}
+.price{
+    float: right;
+    text-align: center;
+    width: 54px;
+    background-color: rgb(140, 140, 140);
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 32px;
+}
+.pt{
+padding-top: 102px;
+}
+
+.news-list{
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    font-size: 0;
+}
+
+.news-list-item{
+    width: 350px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.news-list-item:last-child{
+    margin-right: 0;
+}
+.news-title{
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(85, 82, 82);
+    line-height: 26px;
+}
+
+.news-title::after{
+    margin-top: 14px;
+    width:136px;
+    height: 4px;
+    content: '';
+    display: block;
+    background-color: rgb(26, 188, 156);
+}
+
+.news-text{
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(85, 82, 82);
+    line-height: 26px;
+    letter-spacing:-0.02em;
+}
+.button{
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+    width: 160px;
+    height: 50px;
+    line-height: 60px;
+    border-radius: 3px;
+    background-color: rgb(78, 198, 171);
+    cursor: pointer;
+}
+.button a{
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    line-height: 26px;
+    
+}
+.button:hover,
+.button:focus{
+background-color:darkcyan;
+}
+
+.products-list-item:hover .description{
+    background-color: rgb(26, 188, 156);
+}
+.products-list-item:hover .price{
+    background-color: rgb(127,217,199);
+}
