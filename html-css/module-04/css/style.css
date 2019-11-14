@@ -44,7 +44,6 @@ img{
     color:rgb(26, 188, 156);
 }
 .navigation-bar{
-    font-size: 0;
     float: right;
     margin: 0;
     padding: 0;
@@ -53,17 +52,17 @@ img{
     }
 .navigation-bar li{
     float: left;
-    margin-left: 30px;
+    margin-right: 30px;
     }
-.navigation-bar li:first-child{
-    margin-left: 0px;
+.navigation-bar li:last-child{
+    margin-right: 0px;
 }
 .navigation-bar a{
     text-decoration: none;
     color: rgb(15, 1, 1);
     display: block;
     font-size: 14px;
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -72,19 +71,18 @@ img{
     color: rgb(26, 188, 156);
 }
 
-h2{
+.title{
     margin: 0;
     padding: 0;
-    padding-top: 80px;
     text-align: center;
     font-size: 48px;
     line-height: 58px;
-    font-family: "Myriad Pro";
+    font-family: "myriad-pro", sans-serif;
     color: rgb(81, 81, 81);
     text-transform: uppercase;
 }
-h2::after{
-    margin: 34px 475px 0 475px;
+.title::after{
+    margin: 34px 475px 80px 475px;
     width:160px;
     height: 7px;
     content: '';
@@ -105,8 +103,9 @@ h2::after{
     margin-bottom: 30px;
     cursor: pointer;
 }
-.products-list-item:nth-child(4n){
+.products-list-item:nth-child(5){
     margin-right: 0;
+    margin-bottom: 0;
 }
 .products-list-item:nth-child(8){
     margin-bottom: 0;
@@ -117,7 +116,8 @@ h2::after{
 .products-list-item:nth-child(6){
     margin-bottom: 0;
 }
-.products-list-item:nth-child(5){
+.products-list-item:nth-child(9){
+    margin-right: 0;
     margin-bottom: 0;
 }
 
@@ -125,6 +125,7 @@ h2::after{
     margin: 0;
     padding: 0;
     font-size: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .description{
@@ -156,13 +157,14 @@ padding-top: 102px;
     padding: 0;
     padding-top: 80px;
     font-size: 0;
+    padding-bottom: 30px;
+
 }
 
 .news-list-item{
     width: 350px;
     float: left;
     margin-right: 30px;
-    margin-bottom: 30px;
 }
 
 .news-list-item:last-child{
@@ -171,13 +173,16 @@ padding-top: 102px;
 .news-title{
     margin: 0;
     padding: 0;
-    padding-top: 15px;
+    margin-bottom:15px;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     color: rgb(85, 82, 82);
     line-height: 26px;
 }
 
+.mb{
+    margin-bottom: 15px;
+}
 .news-title::after{
     margin-top: 14px;
     width:136px;
@@ -190,33 +195,28 @@ padding-top: 102px;
 .news-text{
     margin: 0;
     padding: 0;
-    padding-top: 30px;
+    margin-bottom:20px;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     color: rgb(85, 82, 82);
     line-height: 26px;
     letter-spacing:-0.02em;
 }
-.button{
+
+.button {
+    display:block;
     text-align: center;
-    margin: 0;
-    margin-top: 20px;
     width: 160px;
     height: 50px;
-    line-height: 60px;
     border-radius: 3px;
+    padding-top: 12px;
     background-color: rgb(78, 198, 171);
     cursor: pointer;
-}
-.button a{
     white-space: nowrap;
     overflow: hidden;
-    text-align: center;
     font-size: 16px;
-    font-family: "OpenSans";
-    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;    color: rgb(255, 255, 255);
     line-height: 26px;
-    
 }
 .button:hover,
 .button:focus{
