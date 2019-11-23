@@ -263,11 +263,7 @@ img{
     height: 50px;
     top:80px;
     left: 36px;
-    border: none;
-    outline: none;
     opacity: 0;
-    border: none;
-    outline: none;
 }
 .cart-icon{
     float: left;
@@ -276,14 +272,12 @@ img{
     background-image: url(/img/icons/icon-4.png);
     background-repeat: no-repeat;
     background-position: center;
-}
-.products-list-item:hover .cart-icon img{
-    opacity: 1;
+    border: none;
+    outline: none;
 }
 .cart-text{
     float: right;
     text-align: center;
-    padding-top: 8px;
     width: 120px;
     height: 48px;
     text-transform: uppercase;
@@ -292,6 +286,8 @@ img{
     color:rgba(255, 255, 255, 0);
     font-family: "Open Sans";
     font-weight: 400;
+    border: none;
+    outline: none;
 }
 /* Эффекты при наведении  */
 .navigation-bar a:hover,
@@ -332,9 +328,16 @@ img{
     background-color: rgba(50,50,50,1);
     border: 1px solid rgba(255, 255, 255,1);
 }
+.products-list-item:hover .cart-icon{
+    background-color: rgba(50,50,50,1);
+}
+.products-list-item:hover .cart-text{
+    background-color: rgba(50,50,50,1);
+}
 .products-list-item:hover .overlay-icon{
     border: 1px solid rgb(255, 255, 255);
 }
+
 .cart:hover .cart-icon{
     background-color: black;
 }
