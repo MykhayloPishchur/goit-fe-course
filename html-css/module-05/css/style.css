@@ -17,9 +17,6 @@ img{
     max-width: 100%;
     height: auto;
 }
-main{
-    background-color: #e9f0fd;
-}
 .container{
     width: 1110px;
     margin: 0px auto;
@@ -102,11 +99,15 @@ main{
 }
 
 .next{
-    padding: 30px 37px 36px 45px;
+    background-image: url(/img/icons/next.png);
+    background-repeat: no-repeat;
+    background-position: center;
     right: 245px;
     } 
 .prev{
-    padding: 30px 41px 36px 41px;
+    background-image: url(/img/icons/prev.png);
+    background-repeat: no-repeat;
+    background-position: center;
     left: 245px;
     opacity: 0.651;
 }
@@ -159,12 +160,12 @@ main{
     margin: 0;
     padding: 0;
     padding-top: 92px;
-    font-size: 0;
+    background-color: #e9f0fd;
 }
 .products-list-item{
     float: left;
     margin-right: 30px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     cursor: pointer;
 }
 .products-list-item:nth-child(5){
@@ -213,8 +214,6 @@ main{
     width: 235px;
     height: 261px;
     margin: 10px;
-    background-color: rgba(0,0,0,0);
-    
 }
 .overlay-icon{
     float: left;
@@ -226,38 +225,57 @@ main{
     top:80px;
     left: 36px;
 }
+.overlay-icon button{
+    width: 49px;
+    height: 49px;
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,0);
+}
+.heart{
+    background-image: url(/img/icons/icon-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+.rows{
+    background-image: url(/img/icons/icon-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+.clock{
+    background-image: url(/img/icons/icon-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
 .mr{
     margin-right: 0;
 }
-.overlay-icon img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
+
 .cart{
     float: left;
     position: relative;
     margin: 0;
     padding: 0;
-    font-size: 0;
     width: 172px;
-    height: 51px;
+    height: 50px;
     top:80px;
     left: 36px;
+    border: none;
+    outline: none;
+    opacity: 0;
+    border: none;
+    outline: none;
 }
 .cart-icon{
     float: left;
     width: 50px;
     height: 48px;
-    margin: 0;
-}
-.cart-icon img{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    opacity: 0;
+    background-image: url(/img/icons/icon-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .products-list-item:hover .cart-icon img{
     opacity: 1;
@@ -275,8 +293,6 @@ main{
     font-family: "Open Sans";
     font-weight: 400;
 }
-
-
 /* Эффекты при наведении  */
 .navigation-bar a:hover,
 .navigation-bar a:focus{
@@ -288,14 +304,11 @@ main{
 .products-list-item:hover .overlay{
     background-color:rgba(0,0,0,0.549);
 }
+.products-list-item:hover .cart{
+    opacity: 1;
+}
 .products-list-item:hover .cart-text{
     color: white;
-}
-.cart:hover .cart-icon{
-    background-color: rgba(100, 12, 12, 1);
-}
-.cart:hover .cart-text{
-    background-color: rgba(100, 12, 12, 1);
 }
 .products-list-item:hover .prod-description{
     background-color: rgb(26, 188, 156);
@@ -303,7 +316,13 @@ main{
 .products-list-item:hover .prod-price{
     background-color: rgb(127,217,199);
 }
-.products-list-item:hover .overlay-icon img{
+.products-list-item:hover .heart{
+    opacity: 1;
+}
+.products-list-item:hover .rows{
+    opacity: 1;
+}
+.products-list-item:hover .clock{
     opacity: 1;
 }
 .overlay-icon:hover {
@@ -315,6 +334,12 @@ main{
 }
 .products-list-item:hover .overlay-icon{
     border: 1px solid rgb(255, 255, 255);
+}
+.cart:hover .cart-icon{
+    background-color: black;
+}
+.cart:hover .cart-text{
+    background-color: black;
 }
 /* подвал сайта */
 footer {
@@ -331,7 +356,6 @@ footer span{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 28px;
-    letter-spacing: -20;
     color: white;
 }
 footer span a{
