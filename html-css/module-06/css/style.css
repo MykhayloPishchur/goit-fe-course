@@ -1,0 +1,360 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    width: 1200px;
+    margin: 0px auto;
+}
+/* шапка сайта  */
+
+.page-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 92px;
+}
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1abc9c;
+    font-weight: 700;
+    line-height: 36px;
+}
+.nav-bar{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 510px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.underline{
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #b0e9de;
+    cursor: pointer;
+}
+.underline::after{
+    background-color: #f38181;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    margin-top: 12px;
+    transition: width 200ms linear;
+    transform:translateX(-50%);
+}
+.underline:hover,
+.underline:focus{
+    color:#f38181;
+}
+.underline:hover:after,
+a.underline:focus:after {
+    width: 100%;
+}
+
+/* сервисы (тело сайта) */
+.titles-container{
+    padding-top: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cover-title{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.title{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    
+}
+.title::after{
+    width:60px;
+    height: 3px;
+    content: '';
+    display: block;
+    background-color: #f38181;
+    margin: 42px auto 0px;
+}
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    list-style: none;
+    margin: 0;
+    padding: 66px 0px 0px 0px;
+}
+.services-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 382px;
+    margin-bottom: 100px;
+}
+.services-text{
+    display: flex;
+    flex-direction: column;
+}
+.image-container{
+    width: 82px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.services-title{
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.services-desc{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-top: 20px;
+    color: #9f9f9f;
+    font-size: 15px;
+}
+.mb{
+    margin-bottom: 0;
+}
+.clock{
+    background-image: url(../img/img-1.png);
+}
+.web{
+    background-image: url(../img/img-2.png);
+}
+.creativity{
+    background-image: url(../img/img-3.png);
+}
+.seo{
+    background-image: url(../img/img-4.png);
+}
+.house{
+    background-image: url(../img/img-5.png);
+}
+.digit{
+    background-image: url(../img/img-6.png);
+}
+.team-desc{
+    margin: 0 130px 92px 130px;
+    padding-top: 46px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #9f9f9f;
+    line-height: 24px;
+}
+
+
+.team-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.team-container li{
+    width: 380px;
+    height: 542px;
+    margin-bottom: 86px;
+}
+.blu-box{
+    background-color: #95e1d3;
+    width: 380px;
+    height: 470px;
+}
+.team-items{
+    width: 380px;
+    height: 470px;
+}
+.team-items:hover{
+    transform:translate(-10px,-10px);
+    transition: 200ms linear;
+}
+.overlay{
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    background-color: rgba(0, 0, 0, 0);
+}
+.team-items:hover .overlay{
+    background-image: linear-gradient(0deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
+}
+
+.overlay-btn{
+    margin: 1px;
+}
+.overlay-btn button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color:rgba(252, 227, 138, 1);
+}
+.overlay-btn button:hover{
+    background-color:rgba(149, 225, 211, 1);
+}
+
+.facebook{
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+.team-items :hover .facebook{
+    opacity: 1;
+}
+.twitter{
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+.team-items:hover .twitter{
+    opacity: 1;
+}
+.pinterest{
+    background-image: url(../img/pinterest.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+.team-items:hover .pinterest{
+    opacity: 1;
+}
+.instagram{
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+.team-items:hover .instagram{
+    opacity: 1;
+}
+.team-name{
+    padding-top: 30px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+.team-rule{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: #b9b9b9;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about{
+    border-top: 1px solid rgb(229, 229, 229);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+}
+.about-info{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.form{
+    width: 380px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.mail{
+    width: 230px;
+    padding-left: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    border: none;
+    color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+}
+.subscribe{
+    border: none;
+    outline: none;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: #95e1d3;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+.laaqiq{
+    color: #f6a1a1;
+}
