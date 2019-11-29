@@ -198,6 +198,10 @@ a.underline:focus:after {
     transform:translate(-10px,-10px);
     transition: 200ms linear;
 }
+.team-items:not(:hover){
+    transform:translate(0px,0px);
+    transition: 200ms linear;
+}
 .overlay{
     position: absolute;
     width: 380px;
