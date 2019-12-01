@@ -145,6 +145,9 @@ a.underline:focus:after {
 .mb-header{
     margin-bottom: 90px;
 }
+.mb-main{
+    margin-bottom: 86px;
+}
 .mb-services{
     margin-bottom: 80px;
 }
@@ -174,9 +177,6 @@ a.underline:focus:after {
     font-family: 'Roboto', sans-serif;
     color: #9f9f9f;
     line-height: 24px;
-}
-.team{
-    margin-bottom: 86px;
 }
 
 .team-container{
