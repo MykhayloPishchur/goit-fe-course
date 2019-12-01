@@ -32,10 +32,12 @@ img{
     line-height: 36px;
 }
 .nav-bar{
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 510px;
+    min-width: 510px;
     text-transform: uppercase;
     line-height: 1.2;
 }
@@ -76,13 +78,13 @@ a.underline:focus:after {
     align-items: center;
 }
 .cover-title{
-    margin: 0;
-    padding: 0;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Kaushan Script', sans-serif;
     font-size: 24px;
-    margin-bottom: 24px;
+    text-transform: none;
+    font-weight: 400;
 }
 .title{
+    text-align: center;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -112,21 +114,19 @@ a.underline:focus:after {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 382px;
+    width: 392px;
     margin-bottom: 100px;
 }
-.services-text{
-    display: flex;
-    flex-direction: column;
-}
+
 .image-container{
-    width: 82px;
+    width: 92px;
     height: 32px;
     background-repeat: no-repeat;
     background-position: center;
 }
 .services-title{
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     color: #333333;
     text-transform: uppercase;
@@ -136,12 +136,17 @@ a.underline:focus:after {
 .services-desc{
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding-top: 20px;
     color: #9f9f9f;
     font-size: 15px;
 }
 .mb{
     margin-bottom: 0;
+}
+.mb-header{
+    margin-bottom: 90px;
+}
+.mb-services{
+    margin-bottom: 80px;
 }
 .clock{
     background-image: url(../img/img-1.png);
@@ -170,7 +175,9 @@ a.underline:focus:after {
     color: #9f9f9f;
     line-height: 24px;
 }
-
+.team{
+    margin-bottom: 86px;
+}
 
 .team-container{
     display: flex;
@@ -182,8 +189,6 @@ a.underline:focus:after {
 }
 .team-container li{
     width: 380px;
-    height: 542px;
-    margin-bottom: 86px;
 }
 .blu-box{
     background-color: #95e1d3;
@@ -198,10 +203,10 @@ a.underline:focus:after {
     transform:translate(-10px,-10px);
     transition: 200ms linear;
 }
-.team-items:not(:hover){
+/* .team-items:not(:hover){
     transform:translate(0px,0px);
     transition: 200ms linear;
-}
+} */
 .overlay{
     position: absolute;
     width: 380px;
@@ -219,14 +224,14 @@ a.underline:focus:after {
 .overlay-btn{
     margin: 1px;
 }
-.overlay-btn button{
+.icon-container{
+    display: block;
     width: 50px;
     height: 50px;
-    border: none;
     cursor: pointer;
     background-color:rgba(252, 227, 138, 1);
 }
-.overlay-btn button:hover{
+.icon-container:hover{
     background-color:rgba(149, 225, 211, 1);
 }
 
@@ -288,34 +293,6 @@ a.underline:focus:after {
     color: #b9b9b9;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .about{
     border-top: 1px solid rgb(229, 229, 229);
     display: flex;
