@@ -29,8 +29,8 @@
         width: 225px;
         }
     .partners{
-        height: 738px;
         padding-top: 76px;
+        margin-bottom: 40px;
     }
     .partners-title{
         margin-bottom: 38px;
@@ -69,7 +69,7 @@
         width: 960px;
     }
     .navbar{
-        width: 1010px;
+        width: 940px;
     }
     .title{
         width: 510px; 
@@ -85,6 +85,6 @@
     }
     .partners{
         padding-top: 70px;
-        height: 510px;
+        margin-bottom: 72px;
     }
 }
