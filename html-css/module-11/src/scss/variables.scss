@@ -1,0 +1,22 @@
+$shadow-color: #333333;
+$main-color:white;
+$hover-color:#f7cb88;
+$light-back:rgb(243, 129, 129);
+$description-color:#9f9f9f;
+$underbox-color:#95e1d3;
+$team-rule-font:#b9b9b9;
+$container-color:rgba(252, 227, 138, 1);
+$container-hover-color:rgba(243, 129, 129,1);
+$border-footer:rgb(229, 229, 229);
+$mail-color:#d9d9d9;
+$laaqiq-color:#f6a1a1;
+
+%flex{
+    display: flex;
+    justify-content: center;
+  }
+
+%flex-beetween{
+  display: flex;
+  justify-content: space-between;
+}

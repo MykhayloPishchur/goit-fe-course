@@ -1,0 +1,25 @@
+@import './variables';
+html {
+    box-sizing: border-box;
+    text-shadow: $shadow-color;
+  }
+  
+  * {
+    box-sizing: inherit;
+  
+    &::before, &::after {
+      box-sizing: inherit;
+    }
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    max-width: 1212px;
+    margin: 0px auto;
+  }
+  
